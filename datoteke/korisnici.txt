@@ -1,0 +1,9 @@
+Markec|1234a|Marija|Kecman|Administrator
+Vedgli|1234b|Vedrana|Gligoric|Menadzer
+Milpaj|1234c|Milos|Pajic|Menadzer
+Nikvas|1234d|Nikolina|Vasiljevic|Prodavac
+Bojcve|1234e|Bojana|Cvetinovic|Administrator
+Alemar|1234f|Aleksa|Marjanovic|Prodavac
+Alevuk|1234g|Aleksandra|Vuklis|Administrator
+Ivagun|1234h|Iva|Gunjina|Prodavac
+Minsli|1234i|Minja|Slijepcevic|Menadzer
