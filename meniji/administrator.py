@@ -1,4 +1,14 @@
 from knjige.knjiga import prikazi_knjige
+from knjige.knjiga import pretrazi_knjige
+from knjige.knjiga import prikazi_sve_akcije
+from knjige.knjiga import pretrazi_akcije
+from knjige.knjiga import registracija
+from knjige.knjiga import prikazi_sve_korisnike
+from knjige.knjiga import dodaj_knjige
+from knjige.knjiga import izmijeni_knjige
+from knjige.knjiga import logicki_brisi_knjige
+
+
 
 def meni_administrator(ulogovani_korisnik):
     while True:
@@ -21,21 +31,21 @@ def meni_administrator(ulogovani_korisnik):
         if stavka == 1:
             prikazi_knjige()
         elif stavka  == 2:
-            print("PRETRAGA KNJIGA")
+            pretrazi_knjige()
         elif stavka == 3:
-            print("PRIKAZ SVIH AKCIJA")
+            prikazi_sve_akcije()
         elif stavka == 4:
-            print("PRETRAGA AKCIJA")
+            pretrazi_akcije()
         elif stavka == 5:
-            print("REGISTRACIJA")
+            registracija()
         elif stavka == 6:
-            print("PRIKAZ SVIH KORISNIKA")
+            prikazi_sve_korisnike()
         elif stavka == 7:
-            print("DODAVANJE KNJIGE")
+            dodaj_knjige()
         elif stavka == 8:
-            print("IZMJENA KNJIGE")
+            izmijeni_knjige()
         elif stavka == 9:
-            print("LOGICKO BRISANJE KNJIGE")
+            logicki_brisi_knjige()
         elif stavka == 10:
             return
         else:

@@ -1,3 +1,12 @@
+from knjige.knjiga import prikazi_knjige
+from knjige.knjiga import pretrazi_knjige
+from knjige.knjiga import prikazi_sve_akcije
+from knjige.knjiga import pretrazi_akcije
+from knjige.knjiga import prodaj_knjige
+from knjige.knjiga import dodaj_knjige
+from knjige.knjiga import izmijeni_knjige
+from knjige.knjiga import logicki_brisi_knjige
+
 def meni_prodavac(ulogovani_korisnik):
     while True:
         print()
@@ -16,21 +25,21 @@ def meni_prodavac(ulogovani_korisnik):
         stavka = int(input("Izaberite stavku: "))
 
         if stavka == 1:
-            print("PRIKAZ SVIH KNJIGA")
+            prikazi_knjige()
         elif stavka  == 2:
-            print("PRETRAGA KNJIGA")
+            pretrazi_knjige()
         elif stavka == 3:
-            print("PRIKAZ SVIH AKCIJA")
+            prikazi_sve_akcije()
         elif stavka == 4:
-            print("PRETRAGA AKCIJA")
+            pretrazi_akcije()
         elif stavka == 5:
-            print("PRODAJA KNJIGA")
+            prodaj_knjige()
         elif stavka == 6:
-            print("DODAVANJE KNJIGE")
+            dodaj_knjige()
         elif stavka == 7:
-            print("IZMJENA KNJIGE")
+            izmijeni_knjige()
         elif stavka == 8:
-            print("LOGICKO BRISANJE KNJIGE")
+            logicki_brisi_knjige()
         elif stavka == 9:
             return
         else:

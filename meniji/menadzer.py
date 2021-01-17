@@ -1,3 +1,12 @@
+from knjige.knjiga import prikazi_knjige
+from knjige.knjiga import pretrazi_knjige
+from knjige.knjiga import prikazi_sve_akcije
+from knjige.knjiga import pretrazi_akcije
+from knjige.knjiga import registracija
+from knjige.knjiga import prikazi_sve_korisnike
+from knjige.knjiga import dodaj_akcijske_ponude
+from knjige.knjiga import kreiraj_izvjestaj
+
 
 def meni_menadzer(ulogovani_korisnik):
     while True:
@@ -17,21 +26,21 @@ def meni_menadzer(ulogovani_korisnik):
         stavka = int(input("Izaberite stavku: "))
 
         if stavka == 1:
-            print("PRIKAZ SVIH KNJIGA")
+            prikazi_knjige()
         elif stavka  == 2:
-            print("PRETRAGA KNJIGA")
+            pretrazi_knjige()
         elif stavka == 3:
-            print("PRIKAZ SVIH AKCIJA")
+            prikazi_sve_akcije()
         elif stavka == 4:
-            print("PRETRAGA AKCIJA")
+            pretrazi_akcije()
         elif stavka == 5:
-            print("REGISTRACIJA")
+            registracija()
         elif stavka == 6:
-            print("PRIKAZ SVIH KORISNIKA")
+            prikazi_sve_korisnike()
         elif stavka == 7:
-            print("DODAVANJE AKCIJSKE PONUDE")
+            dodaj_akcijske_ponude()
         elif stavka == 8:
-            print("KREIRANJE IZVJESTAJA")
+            kreiraj_izvjestaj()
         elif stavka == 9:
             return
         else:
